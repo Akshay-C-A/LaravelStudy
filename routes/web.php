@@ -36,3 +36,6 @@ Route::get('/User/{name}', function ($name='Akshay') {
 Route::get('/User/{name?}', function ($name='AkshayCA') {
     return $name;
 });
+
+use App\Http\Controllers\HelloWorldController;
+Route::get('/hellocon',[HelloWorldController::class,'index']);
